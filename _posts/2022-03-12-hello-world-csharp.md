@@ -1,6 +1,9 @@
 ---
-title: "Hello, World! (C#)
+title: "Hello, World! (C#)"
 subtitle: The classic way to start learning code
+toc: true
+toc_sticky: true
+toc_icon: code
 ---
 
 If you have not already, please follow the [instructions to get started with C#](/csharp/).  As stated on that link, 
@@ -9,11 +12,11 @@ employer will use, so this let's you "practice how you'll play."
 
 Once you're set up, let's get right to it with the classic starter program: **Hello World!**
 
-### End Result
+## End Result
 A simple console application that spits out the message "Hello, World!" along with anything else we
 decide to make it say!
 
-### Visual Studio: Getting Started
+## Visual Studio: Getting Started
 *__NOTE__: If you decided to code in your browser or some other program, you can ignore these Visual Studio-specific setup instructions.*
 
 When you first open Visual Studio, you'll see a list of recently opened projects (yours will probably be blank) and options
@@ -34,7 +37,7 @@ Once you select your project type, give it a name (e.g.: HelloWorld) and select 
 will automatically change to match the project name - don't worry about what a "solution" vs a "project" means right now.  For
 the framework at the bottom, just go with the default that was selected.  For the record, mine was created using .NET Frameowrk 4.7.2.
 
-### A Tour of the Project
+## A Tour of the New Visual Studio Project
 
 After your project is created, you'll see what Visual Studio looks like.  On one side, you'll see a list of files that were 
 created for your project, and at the bottom you should see a window for console output or an error list.  Don't worry about any 
@@ -93,6 +96,7 @@ later, in projects where we use several files that have to reference each other.
         }
 ```
 
+## Understanding Program Flow
 Back in the day, programs were really simple.  The computer would start at the top of the file and run the first line, then the second, and so on until it hit the end
 of the file.  These days, code can sprawl across many files and be a tangled mess of references between those files.  Thus, every program needs an "entry point" so the
 computer knows where to start, since it can't just go to line 1 of a single file.  `Main` is that entry point.  Think of it as the front door of your program.  Once you're
@@ -106,16 +110,16 @@ line until it gets to the bottom.  Those curly braces are the boundaries for `Ma
 confused.  In fact, try deleting one right now.  Give Visual Studio a second to process what you've done, and you'll see squiggly red lines appear under some of the code - just
 like you would if you misspelled something in a Word document.  The problem you created is at the line where you deleted a bracket, but notice where the red squiggly lines went.
 
-If you deleted the first bracket (the `{`), you'll see red lines under `Main`.  Hover your mouse over `Main` and Visual Studio will pop up the reason for the red lines.  It
+If you deleted the first bracket `{`, you'll see red lines under `Main`.  Hover your mouse over `Main` and Visual Studio will pop up the reason for the red lines.  It
 tells you `Main` has to "declare a body" - in other words, it sees the front door, but it can't tell what room that door is connected to because you bulldozed one of the walls.  What
-about if you delete the second bracket (the '}')?  Now there is a red squiggly at the *very end*.  Visual Studio sees 3 opening brackets, but only 2 closing brackets.  Again, you
+about if you delete the second bracket `}`?  Now there is a red squiggly at the *very end*.  Visual Studio sees 3 opening brackets, but only 2 closing brackets.  Again, you
 bulldozed one of the walls of this structure and now Visual Studio says "wait... there's supposed to be a wall here!"
 
 So this leads to my **BIG FAT WARNING**: Be very careful if you select a bunch of code and delete it.  When you inadvertently delete a curly brace, you're going to wind up with red
 squiggly lines *way far away* from where you've created a problem.  I've seen plenty of beginners hunting their code for way too long only to find out that they deleted a chunk of code
 and left an extra curly brace or accidentally deleted one by accident.
 
-### Writing Your First Code
+## Writing Your First Code
 
 If you haven't yet, put your curly braces back below `Main`.  Put your cursor between them, hit your Enter key to get a new line, and write your **very first line of code**:
 
@@ -139,7 +143,7 @@ it closed?  Congratulations - that's exactly what's supposed to happen.
 **NOTE:** If your command prompt window stayed open, that's cool.  Some editors will automatically do what we're about to add to the code ourselves below.
 It's also possible that you picked a newer version of the .NET Framework when you were making your project - no worries, everything will still work just the same.
 
-### Making It Better
+## Improving Your Code
 
 You'd probably like to see the message before the console closes, right?  Right now, we're telling the `Console` to write a line of text.  Your computer reads the next line, see it's
 the end of the block of code for `Main`, and it says "looks like we're done here" and closes the program.  What we need to do is tell it to do something that will make it wait for us
@@ -176,7 +180,7 @@ Console.ReadKey();
 
 Hit F5, do a test run, annnnnd... **BOOM!**  It works!  Time to celebrate - we just made our first program! 🍾
 
-### What's Next?
+## What's Next?
 
 We'll pick back up with Hello World next time and use it to learn some more programming concepts.  For now, I encourage you to ***experiment!***  In fact, any time you're following along you should feel free to try things out that come to mind.  In general, there is not much harm you can do by changing things.  If these tutorials ever venture into territory where you need to be very careful, *I will heavily warn you*.  So give it a shot and try some things out!  For example:
 
@@ -186,4 +190,5 @@ We'll pick back up with Hello World next time and use it to learn some more prog
 - See what other commands are available when you type `Console.`  *Eventually we'll explore this, but see if you can figure some of it out yourself!*
 - Whatever else you can think of!  **Have fun with it!!**
 
-Well folks, that concludes this lesson.  Pat yourself on the back, because **we made a program**! 😁
+Well folks, that concludes this lesson.  Pat yourself on the back, because:
+> **We made a program**! 😁

@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /csharp/
-title: "C#"
+title: "Getting Started with C#"
 ---
 
 C# (that's C "Sharp") is a programming language created by Microsoft.  It is popular as an introductory language because of its ease of learning and freely available 
