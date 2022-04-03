@@ -1,5 +1,5 @@
 ---
-title: "Hello, World! (C#)"
+title: "Hello, World! (C#) Part 1"
 subtitle: The classic way to start learning code
 toc: true
 toc_sticky: true
@@ -192,3 +192,5 @@ We'll pick back up with Hello World next time and use it to learn some more prog
 
 Well folks, that concludes this lesson.  Pat yourself on the back, because:
 > **We made a program**! 😁
+
+Next up: [Hello World Part 2](/hello-world-csharp-2/).
